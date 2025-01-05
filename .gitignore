@@ -1,0 +1,12 @@
+#
+.git-credentials
+.ssh/
+*.swp
+
+node_modules/
+data/*
+logs/*
+.vscode/
+
+testing/*
+tmp/*
