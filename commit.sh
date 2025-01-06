@@ -1,28 +1,28 @@
 #!/bin/bash
 
-# Define the log file
 log_file="logs/commit.log"
 
-# Check for files to commit
-files_to_commit=$(git status --porcelain | grep '^??' | awk '{print $2}')
+# Get the list of modified or new files
+files_to_commit=$(git ls-files --others --modified --exclude-standard)
 
-if [ -z "$files_to_commit" ]; then
-    echo "$(date): No new files to commit." >> "$log_file"
-    exit 0
+# Log the current timestamp
+#timestamp=$(date "+%a %b %e %H:%M:%S %Z %Y")
+timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+
+if [ -n "$files_to_commit" ]; then
+    echo "$timestamp: Files to commit: $files_to_commit" >> $log_file
+
+    # Stage the files
+    echo "$files_to_commit" | xargs git add
+
+    # Commit the files with a message
+    git commit -m "Automated commit by scheduler"
+
+    # Push to the repository
+    git push origin main
+
+    echo "$timestamp: Commit and push successful" >> $log_file
+else
+    echo "$timestamp: No new files to commit" >> $log_file
 fi
 
-# Commit each file separately
-for file in $files_to_commit; do
-    git add "$file"
-    if git commit -m "Matrix commit for $(date +%Y-%m-%d) - $file" >> "$log_file" 2>&1; then
-        if git push origin main >> "$log_file" 2>&1; then
-            echo "$(date): Successfully committed and pushed $file." >> "$log_file"
-        else
-            echo "$(date): Failed to push $file." >> "$log_file"
-        fi
-    else
-        echo "$(date): Failed to commit $file." >> "$log_file"
-    fi
-done
-
-echo "$(date): All pending files processed." >> "$log_file"
