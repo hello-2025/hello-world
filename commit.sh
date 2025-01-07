@@ -20,7 +20,7 @@ if [ -n "$files_to_commit" ]; then
         git add "$file"
 
         # Commit the file with a message
-        git commit -m "Automated commit by scheduler: $file"
+        git commit -m "Scheduler commit $timestamp: $file"
 
         # Push to the repository
         git push origin main
