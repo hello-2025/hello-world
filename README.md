@@ -22,8 +22,7 @@ Enjoy the journey!
 .....................................................
 .....................................................
 ```
-Last dot added ti. jan. 07 2025
----
+Last dot added Tue Jan 07 2025
 
 ## License
 
@@ -45,7 +44,6 @@ Take inspiration from this project and let your imagination run wild. And don't 
 
 ## Revision History
 
-- 2025-01-05 05:30:02: Added the first dot to the matrix.
-- 2025-01-06 04:00:01: Added another dot to the matrix.
-- 2025-01-07 06:00:01: Added another dot to the matrix.
-- 2025-01-07 09:11:12: Added another dot to the matrix
+- 2025-01-05 05:30:02: Added the first dot to the matrix
+- 2025-01-06 04:00:01: Added another dot to the matrix
+- 2025-01-07 06:00:01: Added another dot to the matrix
