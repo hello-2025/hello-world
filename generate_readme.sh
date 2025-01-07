@@ -3,15 +3,22 @@
 # Define input and output files
 header_file="header.md"
 matrix_file="github_matrix.txt"
+date_file="current_date.txt"
 footer_file="footer.md"
 revisions_file="revisions.md"
 readme_file="README.md"
 
-# Get the current date and time
-current_date=$(date "+%Y-%m-%d %H:%M:%S")
+# Get the timestamp date and time
+timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+current_date=$(date "+%a %b %d %Y")
+
+idate_message="Last dot added $current_date"
+# Create the date message file
+echo "\`\`\`" > "$date_file"
+echo "$date_message" >> "$date_file"
 
 # Define the revision message
-revision_message="$current_date: Added another dot to the matrix."
+revision_message="- $timestamp: Added another dot to the matrix"
 
 # Append the revision message to the revisions.md file
 echo "$revision_message" >> "$revisions_file"
@@ -20,6 +27,7 @@ echo "$revision_message" >> "$revisions_file"
 {
     cat "$header_file"
     cat "$matrix_file"
+    cat "$date_file"
     cat "$footer_file"
     cat "$revisions_file"
 } > "$readme_file"
