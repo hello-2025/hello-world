@@ -28,7 +28,7 @@ if [ -n "$files_to_commit" ]; then
         echo "$timestamp: Push successful for $file" >> $log_file
 
         # Delay for one minute between each push
-        sleep 60
+        sleep 2
     done
 else
     echo "$timestamp: No new files to commit" >> $log_file
