@@ -12,7 +12,7 @@ readme_file="README.md"
 timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 current_date=$(date "+%a %b %d %Y")
 
-date_message="Last dot added $current_date"
+date_message="Last pixel added $current_date"
 # Create the date message file
 echo "\`\`\`" > "$date_file"
 echo "$date_message" >> "$date_file"
