@@ -20,9 +20,9 @@ Enjoy the journey!
 @@@@.@@@@.@....@....@..@...@.@.@.@...................
 @..@.@....@....@....@..@...@.@.@.@...................
 @..@.@....@....@....@..@...@.@.@.@...................
-@..@.@@@@.@@@@.@@@@..@@.....@.@......................
+@..@.@@@@.@@@@.@@@@..@@.....@.@...@..................
 ```
-Last pixel added Mon Sep 01 2025.
+Last pixel added Sun Sep 07 2025.
 
 ## License
 
@@ -133,3 +133,4 @@ Take inspiration from this project and let your imagination run wild. And don't 
 - 2025-08-29 06:00:01: Added another dot to the matrix
 - 2025-08-30 06:00:01: Added another dot to the matrix
 - 2025-09-01 06:00:01: Added another dot to the matrix
+- 2025-09-07 06:00:02: Added another dot to the matrix
