@@ -19,10 +19,10 @@ Enjoy the journey!
 @..@.@....@....@....@..@...@...@.@..@.@..@.@....@....
 @@@@.@@@@.@....@....@..@...@.@.@.@..@.@@@..@....@....
 @..@.@....@....@....@..@...@.@.@.@..@.@@...@....@....
-@..@.@....@....@....@..@...@.@.@.@..@.@.@..@....@....
+@..@.@....@....@....@..@...@.@.@.@..@.@.@..@....@.@..
 @..@.@@@@.@@@@.@@@@..@@.....@.@...@@..@..@.@@@@.@@...
 ```
-Last pixel added Mon Dec 22 2025.
+Last pixel added Fri Dec 26 2025.
 
 ## License
 
@@ -177,3 +177,4 @@ Take inspiration from this project and let your imagination run wild. And don't 
 - 2025-12-14 06:00:01: Added another dot to the matrix
 - 2025-12-20 06:00:01: Added another dot to the matrix
 - 2025-12-22 06:00:01: Added another dot to the matrix
+- 2025-12-26 06:00:01: Added another dot to the matrix
